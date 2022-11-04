@@ -1,0 +1,78 @@
+{
+  "data": {
+    "products": [
+      {
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "colors": ["grey", "black", "green"],
+        "currencyFormat": "$",
+        "currencyId": "USD",
+        "id": 1,
+        "avatar": "https://i.ibb.co/FhXHrzG/10-image.png",
+        "outOfStock": false,
+        "price": 50.0,
+        "sku": 10,
+        "title": "Apollo Running Short"
+      },
+      {
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "colors": ["grey", "black", "green"],
+        "currencyFormat": "$",
+        "currencyId": "USD",
+        "id": 2,
+        "avatar": "https://i.ibb.co/vshzZzw/11-image.png",
+        "outOfStock": false,
+        "price": 50.0,
+        "sku": 11,
+        "title": "Apollo Running Short"
+      },
+      {
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "colors": ["grey", "black", "green"],
+        "currencyFormat": "$",
+        "currencyId": "USD",
+        "id": 3,
+        "avatar": "https://i.ibb.co/1zsMG19/12-image.png",
+        "outOfStock": true,
+        "price": 50.0,
+        "sku": 12,
+        "title": "Apollo Running Short"
+      },
+      {
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "colors": ["grey", "black", "green"],
+        "currencyFormat": "$",
+        "currencyId": "USD",
+        "id": 4,
+        "avatar": "https://i.ibb.co/GxDRSrg/13-image.png",
+        "outOfStock": false,
+        "price": 50.0,
+        "sku": 13,
+        "title": "Apollo Running Short"
+      },
+      {
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "colors": ["grey", "black", "green"],
+        "currencyFormat": "$",
+        "currencyId": "USD",
+        "id": 5,
+        "avatar": "https://i.ibb.co/FhXHrzG/10-image.png",
+        "outOfStock": false,
+        "price": 50.0,
+        "sku": 14,
+        "title": "Apollo Running Short"
+      },
+      {
+        "availableSizes": ["X", "L", "XL", "XXL"],
+        "colors": ["grey", "black", "green"],
+        "currencyFormat": "$",
+        "currencyId": "USD",
+        "id": 6,
+        "avatar": "https://i.ibb.co/1zsMG19/12-image.png",
+        "outOfStock": false,
+        "price": 50.0,
+        "sku": 15,
+        "title": "Apollo Running Short"
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+hr {
+  opacity: 0.5;
+}
+
+.cartProductContainer {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .cartProductInfo {
+    .cartDeleteButton {
+      font-size: 1.2rem;
+      color: rgb(217, 0, 0);
+      cursor: pointer;
+    }
+    .cartDetail {
+      display: flex;
+      gap: 0.6rem;
+      flex-direction: column;
+      .cartDetailTitle {
+        font-size: 1.2rem;
+        color: #1d1f22;
+
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+
+      .cartPrice {
+        font-size: 24px;
+      }
+      .cartDetailDesc {
+        margin: 1rem 0;
+      }
+
+      .cartSizes {
+        .selectors {
+          margin-top: 0.5rem;
+          display: flex;
+          gap: 0.5rem;
+
+          label {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            width: 60px;
+            height: 35px;
+            font-size: 0.8em;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            border-radius: 50%;
+            line-height: 30px;
+            text-align: center;
+
+            input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+
+              &:checked ~ .checkmark {
+                background-color: #001f2f;
+                color: #ececec;
+              }
+
+              &:checked ~ .checkmark:after {
+                display: block;
+              }
+            }
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 60px;
+              height: 35px;
+              font-weight: 500;
+              font-size: 0.8em;
+              border-radius: 10%;
+              box-sizing: border-box;
+              line-height: 35px;
+              text-align: center;
+              color: black;
+              border: 1px solid black;
+              background-color: transparent;
+
+              &:hover {
+                border: 1px solid #5ece7b;
+              }
+            }
+          }
+        }
+      }
+      .cartColors {
+        .selectors {
+          margin-top: 0.5rem;
+          display: flex;
+          gap: 0.5rem;
+
+          label {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+            width: 35px;
+            height: 35px;
+            font-size: 0.8em;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            border-radius: 50%;
+            line-height: 30px;
+            text-align: center;
+
+            input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+
+              &:checked ~ .checkmark {
+                border: 2px solid #5ece7b;
+              }
+
+              &:checked ~ .checkmark:after {
+                display: block;
+              }
+            }
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 35px;
+              height: 35px;
+              font-weight: 500;
+              font-size: 0.8em;
+              border-radius: 10%;
+              box-sizing: border-box;
+              line-height: 35px;
+              text-align: center;
+              color: black;
+
+              border: 1px solid transparent;
+
+              &:hover {
+                border: 1px solid #5ece7b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cartRight {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
+
+    .quantityControl {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      font-size: 1rem;
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+        gap: 1rem;
+      }
+      .changeQuantity {
+        width: 30px;
+        height: 30px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

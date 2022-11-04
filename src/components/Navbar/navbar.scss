@@ -1,0 +1,97 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+
+  .navLeft {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+    .navList {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+
+      .navItem {
+        .navLink {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 16px;
+          color: #1d1f22;
+        }
+
+        .navLink.active {
+          font-weight: 600;
+          color: #5ece7b;
+          padding-bottom: 1.2rem;
+          border-bottom: 2px solid #5ece7b;
+        }
+      }
+    }
+  }
+
+  .navRight {
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+    color: #1d1f22;
+
+    span {
+      font-size: 20px;
+    }
+
+    .currencyIcon {
+      select {
+        border: none;
+        background: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: #1d1f22;
+        outline: none;
+      }
+    }
+    .cartIcon {
+      position: relative;
+      cursor: pointer;
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+      .cartQuantity {
+        position: absolute;
+        top: -12px;
+        right: -10px;
+        background-color: #1d1f22;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+      }
+    }
+    .mobileCartIcon {
+      position: relative;
+      cursor: pointer;
+      display: none;
+
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: #1d1f22;
+      }
+
+      .cartQuantity {
+        position: absolute;
+        top: -12px;
+        right: -10px;
+        background-color: #1d1f22;
+        color: #fff;
+        border-radius: 50%;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+      }
+    }
+  }
+}

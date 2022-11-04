@@ -1,0 +1,12 @@
+.cartProductsContainer {
+  position: relative;
+  min-height: 280px;
+  padding-bottom: 2rem;
+
+  .cartProductsEmpty {
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+  }
+}

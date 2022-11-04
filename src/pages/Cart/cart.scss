@@ -1,0 +1,49 @@
+.cartContainer {
+  padding: 2rem;
+
+  .emptyCart {
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+  }
+
+  .cartContent {
+    .cartTitle {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .cartFooter {
+      display: flex;
+      gap: 0.5rem;
+      flex-direction: column;
+      .sub {
+        font-size: 20px;
+        font-weight: 400;
+        b {
+          font-weight: 700;
+        }
+      }
+
+      .totalCost {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .checkoutButton {
+        height: 43px;
+        width: 40%;
+        background-color: #5ece7b;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
