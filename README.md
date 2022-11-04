@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a Mini Store application that displays the avaliable productsin the store and has Paystack integration for payment of products ordered. The application was built using Typescript, React, SCSS, Webpack and Context API and deployed to Heroku
+This is a E-commerece Store application that displays the avaliable productsin the store and has Paystack integration for payment of products ordered. The application was built using Typescript, React, SCSS, Webpack and Context API.
 
 ## Logs
 
