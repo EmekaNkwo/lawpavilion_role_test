@@ -6,9 +6,9 @@ This is a E-commerece Store application that displays the avaliable productsin t
 
 ## Logs
 
-- I passed data using props validation using Typescript interfaces and types for better type checking
+- Passed data using props validation using Typescript interfaces and types for better type checking
 - Used SCSS for styling of components and pages
-- I fetched data using React virtualization concept
+- Fetched data using React virtualization concept
 - Used Context API for data management
 
 ## Features
