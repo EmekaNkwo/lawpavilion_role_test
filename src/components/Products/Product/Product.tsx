@@ -3,6 +3,7 @@ import { BsCart3 } from "react-icons/bs";
 import "./product.scss";
 import { useState } from "react";
 import { useCart } from "../../../hooks";
+import { Link } from "react-router-dom";
 
 interface IProps {
   product: IProduct;
@@ -21,13 +22,15 @@ const Product = ({ product }: IProps) => {
       {outOfStock ? (
         <div className="outOfStock" style={{ opacity: "0.5" }}>
           <span className="outOfStockText">Out of Stock</span>
-          <a href="#!">
+
+          <Link to="#!">
             <img
               src={require(`../../../assets/products/${sku}-image.png`)}
               alt={title}
               className="productImg"
             />
-          </a>
+          </Link>
+
           <p className="productTitle">{title}</p>
           <b className="productPrice">
             {currencyFormat}
@@ -39,13 +42,13 @@ const Product = ({ product }: IProps) => {
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         >
-          <a href={`product/${id}`}>
+          <Link to={`product/${id}`}>
             <img
               src={require(`../../../assets/products/${sku}-image.png`)}
               alt={title}
               className="productImg"
             />
-          </a>
+          </Link>
           <p className="productTitle">{title}</p>
           <b className="productPrice">
             {currencyFormat}
