@@ -39,27 +39,49 @@
     }
   }
 
-  .productTitle {
-    font-weight: 300;
-    font-size: 18px;
-  }
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .productTitle {
+      font-weight: 300;
+      font-size: 18px;
+    }
 
-  .productPrice {
-    font-weight: 500;
-    font-size: 18px;
-  }
+    .productPrice {
+      font-weight: 500;
+      font-size: 18px;
+    }
 
-  .buyButton {
-    position: absolute;
-    bottom: 2rem;
-    right: 1.4rem;
-    color: #fff;
-    background-color: #5ece7b;
-    border: none;
-    font-size: 1.5rem;
-    padding: 13px;
-    font-weight: 600;
-    border-radius: 100%;
-    cursor: pointer;
+    .buyButton {
+      position: absolute;
+      bottom: 2rem;
+      right: 1.4rem;
+      color: #fff;
+      background-color: #5ece7b;
+      border: none;
+      font-size: 1.5rem;
+      padding: 13px;
+      font-weight: 600;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+
+    .mobileBuyButton {
+      display: none;
+      @media only screen and (max-width: 1024px) {
+        display: block;
+      }
+
+      button {
+        height: 43px;
+        width: 100%;
+        background-color: #5ece7b;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
   }
 }
