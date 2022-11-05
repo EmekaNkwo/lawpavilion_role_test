@@ -9,7 +9,6 @@ const ProductDetail = () => {
 
   //how to filter by id
   const product = products.find((product) => product.id === Number(id));
-  console.log(product);
 
   useEffect(() => {
     fetchProducts();
