@@ -1,6 +1,6 @@
 # LAWPAVILION FRONTEND ASSESSMENT
 
-## Overview
+## Overview [Live Demo](https://emekankwo-lawpavilion.netlify.app/)
 
 This is a E-commerece Store application that displays the avaliable productsin the store and has Paystack integration for payment of products ordered. The application was built using Typescript, React, SCSS, Webpack and Context API.
 
