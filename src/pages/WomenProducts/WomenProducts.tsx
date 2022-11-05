@@ -5,7 +5,6 @@ import "./womenProducts.scss";
 const WomenProducts = () => {
   const { isFetching, products, fetchProducts } = useProducts();
 
-  console.log(products);
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
