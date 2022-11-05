@@ -2,20 +2,33 @@ import "./productDetail.scss";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useProducts from "../../hooks/useProducts";
+import { useCart } from "../../hooks";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const { products, fetchProducts } = useProducts();
 
   //how to filter by id
-  const product = products.find((product) => product.id === Number(id));
+  const product = products.find((product) => String(product.id) === id);
+
+  //how to fetch by id
+  // const product = products.find((product) => product.id === Number(id));
 
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
 
+  const { addProduct } = useCart();
+
+  const handleAddProduct = () => {
+    addProduct({
+      ...product,
+      quantity: 1,
+    });
+  };
+
   return (
-    <div className="detailContainer">
+    <div className="detailContainer" key={id}>
       <div className="imgContainer">
         <div className="imageAngles">
           <img src={product?.avatar} alt={product?.title} />
@@ -73,7 +86,7 @@ const ProductDetail = () => {
           </span>
         </div>
         <div className="cartButton">
-          <button>ADD TO CART</button>
+          <button onClick={handleAddProduct}>ADD TO CART</button>
         </div>
 
         <span className="productdesc">
