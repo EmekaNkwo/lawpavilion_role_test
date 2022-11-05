@@ -15,7 +15,6 @@ const Product = ({ product }: IProps) => {
   const { addProduct } = useCart();
   const handleAddProduct = () => {
     addProduct({ ...product, quantity: 1 });
-    console.log({ product });
   };
   return (
     <div className="productContainer" key={sku}>
