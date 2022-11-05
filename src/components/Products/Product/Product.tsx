@@ -17,11 +17,11 @@ const Product = ({ product }: IProps) => {
     addProduct({ ...product, quantity: 1 });
   };
   return (
-    <div className="productContainer" key={sku}>
+    <div className="productContainer" key={id}>
       {outOfStock ? (
         <div className="outOfStock" style={{ opacity: "0.5" }}>
           <span className="outOfStockText">Out of Stock</span>
-          <a href={`/product/${id}`}>
+          <a href="#!">
             <img
               src={require(`../../../assets/products/${sku}-image.png`)}
               alt={title}
@@ -39,7 +39,7 @@ const Product = ({ product }: IProps) => {
           onPointerOver={() => setHover(true)}
           onPointerOut={() => setHover(false)}
         >
-          <a href={`/product/${id}`}>
+          <a href={`product/${id}`}>
             <img
               src={require(`../../../assets/products/${sku}-image.png`)}
               alt={title}
