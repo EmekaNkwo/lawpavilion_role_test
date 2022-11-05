@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useProducts from "../../hooks/useProducts";
 import { useCart } from "../../hooks";
+import { Loader } from "../../components";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { products, fetchProducts } = useProducts();
+  const { isFetching, products, fetchProducts } = useProducts();
 
   //how to filter by id
   const product = products.find((product) => String(product.id) === id);
@@ -26,6 +27,7 @@ const ProductDetail = () => {
 
   return (
     <div className="detailContainer" key={id}>
+      {isFetching && <Loader />}
       <div className="imgContainer">
         <div className="imageAngles">
           <img src={product?.avatar} alt={product?.title} />
