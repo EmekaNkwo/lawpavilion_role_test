@@ -1,8 +1,12 @@
 .detailContainer {
   padding: 2rem;
   display: flex;
-
   gap: 4rem;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
   .imgContainer {
     display: flex;
@@ -11,6 +15,9 @@
     .imageAngles {
       display: flex;
       flex-direction: column;
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
 
       img {
         height: 80px;
@@ -25,7 +32,12 @@
       img {
         height: 500px;
         width: 500px;
-        object-fit: fill;
+        object-fit: cover;
+
+        @media only screen and (max-width: 680px) {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }
@@ -38,7 +50,11 @@
     .productTitle {
       display: flex;
       flex-direction: column;
-      font-size: 30px;
+      font-size: 2.2rem;
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 2rem;
+      }
       b {
         font-weight: 600;
       }
@@ -126,8 +142,7 @@
             cursor: pointer;
 
             &:checked ~ .checkmark {
-              background-color: #001f2f;
-              color: #ececec;
+              border: 2px solid #5ece7b;
             }
 
             &:checked ~ .checkmark:after {
@@ -163,7 +178,7 @@
       gap: 0.5rem;
 
       span {
-        font-size: 24px;
+        font-size: 1.6rem;
         font-weight: 700;
       }
     }
@@ -172,6 +187,7 @@
       button {
         height: 52px;
         width: 100%;
+        font-weight: 700;
         background-color: #5ece7b;
         color: #fff;
         border: none;
