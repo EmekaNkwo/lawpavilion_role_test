@@ -11,12 +11,9 @@ const ProductDetail = () => {
   //how to filter by id
   const product = products.find((product) => String(product.id) === id);
 
-  //how to fetch by id
-  // const product = products.find((product) => product.id === Number(id));
-
   useEffect(() => {
     fetchProducts();
-  }, [fetchProducts]);
+  }, [fetchProducts, id]);
 
   const { addProduct } = useCart();
 
