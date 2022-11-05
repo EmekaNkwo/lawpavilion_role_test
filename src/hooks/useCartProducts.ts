@@ -26,7 +26,7 @@ const useCartProducts = () => {
     }
   };
 
-  const addProduct = (newProduct: ICartProduct) => {
+  const addProduct = (newProduct: ICartProduct | any) => {
     let updatedProducts;
     const isProductAlreadyInCart = products.some(
       (product: ICartProduct) => newProduct.id === product.id
