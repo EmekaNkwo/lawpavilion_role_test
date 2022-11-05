@@ -10,8 +10,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<WomenProducts />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="product/:id" element={<ProductDetail />} />
+          <Route path="cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </div>
