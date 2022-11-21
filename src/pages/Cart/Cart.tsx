@@ -20,7 +20,6 @@ const Cart = () => {
     alert("Payment Successful! ");
     emptyCart();
     console.log(reference);
-
     navigate("/");
   };
   const onClose = () => {
